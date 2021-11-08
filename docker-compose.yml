@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  twnkl_nginx_1:
+      build:
+          context: ./
+      container_name: mytest 
+      restart: always
+      ports:
+          - "80:80"
+          - "443:443"
+
